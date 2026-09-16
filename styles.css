@@ -41,24 +41,24 @@
   justify-content:space-between;
   align-items:center;
   font-size:12px}
-#ev-white .ew-home {
+#ev-white .ew-home,#ev-white .ew-nav button,#ev-white .ew-nav a {
   display:inline-flex;
   align-items:center;
   min-height:44px;
-  font-size:14px;
-  font-weight:600;
-  letter-spacing:-.4px}
+  padding:8px 0;
+  font-family:inherit;
+  font-size:13px;
+  font-weight:400;
+  line-height:20px;
+  letter-spacing:0;
+  color:var(--ev-ink)}
 #ev-white .ew-nav {
   display:flex;
   gap:20px;
   align-items:center}
 #ev-white .ew-nav button,#ev-white .ew-nav a {
-  display:inline-flex;
-  align-items:center;
   justify-content:center;
-  min-height:44px;
   min-width:44px;
-  font-size:13px;
   position:relative}
 #ev-white .ew-nav button:after,#ev-white .ew-nav a:after {
   content:'';
