@@ -35,6 +35,10 @@ Then open `http://localhost:8000` in your browser.
 
 ## Notes
 
+Contact is available from the third navigation item, or directly through `index.html#contact`. Work and About also have shareable hash links, and browser Back/Forward works between sections. The footer email remains a direct shortcut. Résumés are offered privately on request; no PDF is hosted.
+
+`404.html` matches the portfolio and includes links back home and to each section. Open it directly to preview. When publishing, configure the host to serve this file for missing URLs with HTTP status 404; the page alone does not configure server routing. The built-in Python preview server displays its own error page for missing URLs, so visit `/404.html` to preview the custom design. The 404 page assumes a domain-root deployment; change its `<base href="/">` if deploying under a subfolder.
+
 This project is intentionally static and intentionally does not include analytics, a backend, or deployment automation. It is designed to be easy to host on GitHub Pages, Netlify, or any static hosting provider.
 
 ## Contact
@@ -43,4 +47,3 @@ Email: el3443@columbia.edu
 
 GitHub: https://github.com/Evanlei
 LinkedIn: https://www.linkedin.com/in/evanlei06/
-

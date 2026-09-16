@@ -49,10 +49,10 @@
   display:flex;
   gap:27px;
   align-items:center}
-#ev-white .ew-nav button {
+#ev-white .ew-nav button,#ev-white .ew-nav a {
   font-size:11px;
   position:relative}
-#ev-white .ew-nav button:after {
+#ev-white .ew-nav button:after,#ev-white .ew-nav a:after {
   content:'';
   height:1px;
   background:#222;
@@ -63,7 +63,7 @@
   transform:scaleX(0);
   transform-origin:left;
   transition:transform .3s}
-#ev-white .ew-nav button:hover:after,#ev-white .ew-nav button[aria-pressed=true]:after {
+#ev-white .ew-nav button:hover:after,#ev-white .ew-nav button[aria-pressed=true]:after,#ev-white .ew-nav a:hover:after {
   transform:scaleX(1)}
 #ev-white canvas {
   position:absolute;
@@ -241,6 +241,54 @@
   padding-bottom:4px;
   font-size:12px;
   margin-top:10px}
+#ev-white .ew-contact {
+  max-width:520px}
+#ev-white .ew-contact-intro {
+  font-size:13px;
+  color:#737373;
+  margin:0 0 16px}
+#ev-white .ew-contact h2 {
+  font-size:clamp(48px,7vw,68px);
+  letter-spacing:-3px;
+  margin-bottom:22px}
+#ev-white .ew-contact-copy {
+  max-width:375px;
+  font-size:15px;
+  line-height:1.8;
+  color:#666;
+  margin:0 0 30px}
+#ev-white .ew-contact-email {
+  display:inline-block;
+  font-size:clamp(17px,3.5vw,25px);
+  letter-spacing:-.6px;
+  border-bottom:1px solid #aaa;
+  padding-bottom:8px;
+  transition:border-color .3s}
+#ev-white .ew-contact-email:hover {
+  border-color:#171717}
+#ev-white .ew-contact-details {
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px 26px;
+  font-size:11px;
+  color:#737373;
+  margin-top:24px}
+#ev-white .ew-not-found {
+  text-align:center}
+#ev-white .ew-not-found h1 {
+  font-size:clamp(96px,17vw,174px);
+  letter-spacing:-8px;
+  margin-bottom:14px}
+#ev-white .ew-not-found p {
+  font-size:15px;
+  color:#666;
+  line-height:1.7;
+  margin:0 0 27px}
+#ev-white .ew-back {
+  display:inline-block;
+  font-size:12px;
+  border-bottom:1px solid #aaa;
+  padding:8px 0}
 @keyframes ew-blink {
   50% {
   opacity:0}
