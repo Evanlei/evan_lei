@@ -14,14 +14,12 @@ This portfolio is designed as a lightweight, single-page personal site that can 
 - Social links and email contact
 - Lightweight performance with no dependencies
 - Accessible, reduced-motion friendly behavior
-- Built-in support for a downloadable résumé PDF
 
 ## Project structure
 
 - `index.html` — page structure, content, navigation, and links
 - `styles.css` — layout, typography, spacing, and responsive styling
 - `script.js` — animated background, typewriter effect, and navigation behavior
-- `resume.pdf` — downloadable résumé file (if included)
 
 ## Local preview
 
@@ -34,16 +32,6 @@ python3 -m http.server
 ```
 
 Then open `http://localhost:8000` in your browser.
-
-## Add your résumé
-
-Place your PDF in the same folder as `index.html` and name it `resume.pdf`.
-
-The résumé button is linked as:
-
-```html
-<a class="ew-resume" href="resume.pdf" download>résumé ↗</a>
-```
 
 ## Notes
 
