@@ -1,6 +1,6 @@
 # Evan Lei — Portfolio
 
-A simple, content-first portfolio built with plain HTML and CSS, inspired by the straightforward layout of https://enes.web.app.
+A simple, content-first portfolio built with plain HTML and CSS.
 
 The page presents a short profile beside a short introduction and project list. It uses system fonts, a white background, subtle blue links, and a stacked layout on mobile. All content is visible without JavaScript. Native anchor links preserve shareable `#about`, `#work` URLs.
 
