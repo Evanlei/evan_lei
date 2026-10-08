@@ -6,6 +6,7 @@
   <meta name="description" content="Evan Lei — computer science student at Columbia University. Projects and background.">
   <title>Evan Lei</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -17,6 +18,9 @@
   </header>
   <main id="main" class="layout">
     <aside class="profile" id="home" aria-labelledby="profile-name">
+      <div class="portrait">
+        <img class="profile-photo" src="photo/IMG_0776-2%202.PNG" alt="Evan Lei" width="216" height="252" decoding="async">
+      </div>
       <h1 id="profile-name">Evan Lei</h1>
       <p class="profile-description">CS @ Columbia University</p>
       <div class="profile-links">
@@ -27,16 +31,30 @@
     <div class="content">
       <section id="about" aria-labelledby="about-heading">
         <h2 id="about-heading">About</h2>
-        <p>Hi, I'm Evan, a computer science student at Columbia University. I enjoy learning how things work and building things of my own.</p>
+        <p class="intro">I like figuring things out,<br class="desktop-break"> then making something of my own.</p>
+        <p>I'm a CS student at Columbia, interested in machine learning and building useful, thoughtful software.</p>
         <p>Outside of code, I've played clarinet for eight years. I also enjoy going to the gym and the occasional hike.</p>
       </section>
       <section id="work" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Projects</h2>
-        <article class="project">
-          <h3><a href="https://sip-water-tracker.vercel.app/" target="_blank" rel="noopener noreferrer">sip. <span aria-hidden="true">↗</span></a></h3>
-          <p>A simple daily water tracker.</p>
-          <div class="project-links"><a href="https://sip-water-tracker.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a><a href="https://github.com/Evanlei/sip-water-tracker" target="_blank" rel="noopener noreferrer">Source code <span aria-hidden="true">↗</span></a></div>
-        </article>
+        <div class="section-heading"><h2 id="projects-heading">Projects</h2><a class="all-projects" href="https://github.com/Evanlei?tab=repositories" target="_blank" rel="noopener noreferrer">All on GitHub <span aria-hidden="true">↗</span></a></div>
+        <div class="project-list">
+          <article class="project">
+            <span class="project-number" aria-hidden="true">01</span>
+            <div class="project-body">
+              <div class="project-heading"><h3><a href="https://github.com/Evanlei/Mochi" target="_blank" rel="noopener noreferrer">Mochi <span aria-hidden="true">↗</span></a></h3></div>
+              <p>A macOS music companion with song search, Spotify controls, and a floating desktop friend.</p>
+              <p class="project-meta">Swift · SwiftUI · Spotify</p>
+            </div>
+          </article>
+          <article class="project">
+            <span class="project-number" aria-hidden="true">02</span>
+            <div class="project-body">
+              <div class="project-heading"><h3><a href="https://github.com/Evanlei/Veyo" target="_blank" rel="noopener noreferrer">Veyo <span aria-hidden="true">↗</span></a></h3></div>
+              <p>Visual attention analysis for ads, starting with image loading and DeepGaze predictions.</p>
+              <p class="project-meta">Python · PyTorch · DeepGaze IIE</p>
+            </div>
+          </article>
+        </div>
       </section>
     </div>
   </main>

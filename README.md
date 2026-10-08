@@ -1,28 +1,33 @@
 # Evan Lei — Portfolio
 
-A simple, content-first portfolio built with plain HTML and CSS.
+A small personal portfolio built with plain HTML, CSS, and JavaScript. Warm paper tones, muted green links, a portrait, and a compact project list give it its own style.
 
-The page presents a short profile beside a short introduction and project list. It uses system fonts, a white background, subtle blue links, and a stacked layout on mobile. All content is visible without JavaScript. Native anchor links preserve shareable `#about`, `#work` URLs.
+Subtle CSS effects add a brief staggered entrance, project hover highlight, and moving link arrows. Motion follows the visitor's reduced-motion preference; no animation library is required.
+
+## Content
+
+The page includes About and Projects, featuring Mochi and Veyo. The full project collection is linked on GitHub. Project descriptions were reviewed against the public GitHub repositories on October 7, 2026. Mochi and Veyo are under development. Navigation uses native anchor links; the profile links to GitHub and LinkedIn.
+
+## Local portrait
+
+The original photo stays in the ignored `photo/` folder and is not tracked by Git. The local preview loads it directly. On a checkout without the photo, a small script hides the missing portrait.
+
+To include the photo on a hosted website, supply it separately during deployment or update the image URL to your chosen image host. A photo displayed on a public website is accessible to visitors even if it is excluded from the source repository.
+
+## Preview
+
+Run `python3 -m http.server 8000`, then visit http://localhost:8000. No install or build step is required.
+
+`404.html` shares the site's styles. Configure your host to serve it with HTTP status 404 for missing URLs. Its base URL assumes a domain-root deployment.
 
 ## Files
 
 - `index.html` — profile, introduction, and projects
-- `styles.css` — responsive layout and shared styles
-- `404.html` — matching page-not-found design
-- `script.js` — unused placeholder; no JavaScript is required on the portfolio
+- `styles.css` — layout, typography, and responsive styles
+- `script.js` — missing-portrait fallback
+- `404.html` — page-not-found design
 
-## Preview
+## Links
 
-Run `python3 -m http.server 8000`, then visit http://localhost:8000. You can also open `index.html` directly.
-
-Visit `/404.html` to preview the custom error page. Configure your host to serve it with HTTP status 404 for missing URLs. It assumes a domain-root deployment; update its base URL if hosting in a subfolder.
-
-The site has no dependencies, build step, analytics, or backend. Résumés are available privately on request.
-
-## Contact
-
-Email: el3443@columbia.edu
-
-GitHub: https://github.com/Evanlei
-
-LinkedIn: https://www.linkedin.com/in/evanlei06/
+- https://github.com/Evanlei
+- https://www.linkedin.com/in/evanlei06/
